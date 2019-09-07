@@ -1,7 +1,8 @@
-# tv-i2c-monitor
+# yavdr-intel-tv-monitor
 This is an experimental program based on [https://github.com/beralt/istvup].
-It checks the HDCP chip i2c address availability for the given i2c device
-and calls the DBus method of yavdr-frontend to start/stop the currently used frontend.
+It checks the HDCP chip i2c address availability for the given i2c device in order to
+determine if the TV is on or off and calls a DBus method of yavdr-frontend to start/stop
+the currently used frontend.
 
 ## Installation
 Install the build dependencies:
@@ -31,6 +32,6 @@ i2c-7	i2c       	DPDDC-B                         	I2C adapter
 i2c-5	i2c       	i915 gmbus dpd                  	I2C adapter
 
 # with the device number for the "i915 gmbus dp*" connection:
-./tv-i2c-monitor 3
+sudo ./tv-i2c-monitor 3
 ```
 
