@@ -166,7 +166,7 @@ int main(int argc, char *argv[])
                             fprintf(stderr, "could not start frontend\n");
                         } else {
                             fprintf(stderr, "started frontend\n");
-                            started = 0;
+                            started = 1;
                             sleep_duration = LONG_SLEEP_DURATION;
                         }
                     }
